@@ -1,0 +1,74 @@
+----- Loja Virtual -----
+Pages
+- Home
+-- carousel
+-- imgAreaRight
+-- imgAreaBottomLeft
+-- imgAreaBotoomRight
+
+-- today deals 
+-- emphasisArea
+-- bets Selling Products
+-- our featured
+-- black friday
+-- latest news
+
+- contact 
+-- contactarea
+-- formComment
+-- our store item
+
+- whishlist
+-- whishItem
+
+- panel in DB make CRUD
+
+- my account
+-- orders
+-- download
+-- address
+-- account details
+-- logout / apenas deslogar e ir para home
+
+
+Components
+geral
+- Header
+- Navbar
+- newslister
+- footer
+-modal register end sign in
+
+items das paginas
+
+
+- emphasis = destaque
+- details
+- productItem
+
+area do item selecionada
+- Related Products / no final da página
+- viewProduct
+ -- decription
+ -- additional information
+ -- size guide
+ -- reviews
+
+ - modal product add
+ - cart 
+
+ - page cart
+ -- shopint cart
+ --- CART TOTALS
+ --- viewProduct
+ --- coupon discont
+
+-- checkout
+--- menssage
+--- BILLING DETAILS
+--- YOUR ORDER
+
+-- order complet
+--- details bar
+---order details 
+
