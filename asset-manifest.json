@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/lojavirtual/static/css/main.75b44685.css",
+    "main.js": "/lojavirtual/static/js/main.059661a6.js",
+    "static/media/bgblue.svg": "/lojavirtual/static/media/bgblue.195cde02ab21f9a1aa12a9fc7136b699.svg",
+    "static/media/bgblack.svg": "/lojavirtual/static/media/bgblack.4e678af59b97da5fdab975fdc1727b4d.svg",
+    "static/media/error.svg": "/lojavirtual/static/media/error.fc591e892f9c86af769b76117cd70229.svg",
+    "static/media/sp.jpg": "/lojavirtual/static/media/sp.1eab794ddd5e0b84a65a.jpg",
+    "static/media/montain.svg": "/lojavirtual/static/media/montain.3d1a732dbd508e737a89e06edd6bd9d9.svg",
+    "static/media/contactus.jpg": "/lojavirtual/static/media/contactus.7fd055fc03143b62b809.jpg",
+    "static/media/photo.svg": "/lojavirtual/static/media/photo.5addb219ed2d7e159a994ddfb9c7396b.svg",
+    "static/media/notebook.jpg": "/lojavirtual/static/media/notebook.3cef10dff88f7595ec89.jpg",
+    "static/media/jack.jpg": "/lojavirtual/static/media/jack.8be19c480a8aa53620e7.jpg",
+    "static/media/woman.svg": "/lojavirtual/static/media/woman.bf79b3491ce0750180d80a627f96c50b.svg",
+    "static/media/bh.jpg": "/lojavirtual/static/media/bh.ccfe84573fc702ed4b62.jpg",
+    "static/media/gifs.gif": "/lojavirtual/static/media/gifs.181c5a6430bcb77324b1.gif",
+    "static/media/avatar.jpg": "/lojavirtual/static/media/avatar.7af323c188ae0b27ddbc.jpg",
+    "static/media/cur.jpg": "/lojavirtual/static/media/cur.12d203b80ac2a8bdcf7e.jpg",
+    "static/media/eletronic.jpg": "/lojavirtual/static/media/eletronic.59921f17562e2a4cbc0a.jpg",
+    "static/media/rj.jpg": "/lojavirtual/static/media/rj.de83cdd04a780a854b3b.jpg",
+    "static/media/modalbg.png": "/lojavirtual/static/media/modalbg.6cb17228392027f36f16.png",
+    "static/media/cel.svg": "/lojavirtual/static/media/cel.50dd16eb02cfbc47c307795f4b07b8af.svg",
+    "static/media/phone.png": "/lojavirtual/static/media/phone.6a4e049e68d9f2b44562.png",
+    "static/media/cel.jpg": "/lojavirtual/static/media/cel.1c2da2fea2debaaa95af.jpg",
+    "static/media/banner.jpg": "/lojavirtual/static/media/banner.f242311011239657959c.jpg",
+    "static/media/logo.png": "/lojavirtual/static/media/logo.7cf8e32d8f8406d5e7ad.png",
+    "index.html": "/lojavirtual/index.html",
+    "main.75b44685.css.map": "/lojavirtual/static/css/main.75b44685.css.map",
+    "main.059661a6.js.map": "/lojavirtual/static/js/main.059661a6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75b44685.css",
+    "static/js/main.059661a6.js"
+  ]
+}
