@@ -37,9 +37,9 @@ export const Login = () => {
 
     return (
         <C.Container >
-            <div className=" min-h-screen flex flex-col items-center justify-center ">
+            <div className="md:px-0 px-2 min-h-screen flex flex-col items-center justify-center ">
 
-                <form className=" w-96 text-white text-md font-bold text-center" onSubmit={handleLogin}>
+                <form className=" md:w-96 text-white text-md font-bold text-center" onSubmit={handleLogin}>
 
                     <h2 className="text-center text-3xl mb-8 tracking-widest">Login</h2>
                     {menssage &&
@@ -82,7 +82,7 @@ export const Login = () => {
                     <div className="flex flex-col items-center mt-8">
                         <input disabled={disabled} className=" py-1 px-2 my-8 rounded bg-blue-600 text-white text-lg cursor-pointer w-1/2 text-center hover:bg-blue-700" type="submit" value="Login" />
                     </div>
-                    <footer className="flex items-center justify-center font-normal text-sm text-center"><p className="mr-10 text-blue-400 cursor-pointer" onClick={handleBack}>voltar</p><p className="font-normal text-sm text-center ">Para criar uma conta <Link className="text-blue-400 hover:underline" to="/register">clique aqui.</Link></p></footer>
+                    <footer className="flex items-center justify-center font-normal text-sm text-center"><p className="mr-2 md:mr-10 text-blue-400 cursor-pointer" onClick={handleBack}>voltar</p><p className="font-normal text-sm text-center ">Para criar uma conta <Link className="text-blue-400 hover:underline" to="/register">clique aqui.</Link></p></footer>
 
                 </form>
 

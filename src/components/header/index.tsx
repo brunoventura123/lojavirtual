@@ -12,7 +12,7 @@ export const Header = () => {
     const [open, setOpen] = useState(false)
     const [close, setClose] = useState(false)
     const handleMenu = () => {
-        setClose(!close)
+        setClose(true)
     }
 
     return (
@@ -24,7 +24,7 @@ export const Header = () => {
                     </div>
                     <nav className="info">
                         <ul>
-                            <li className='cursor-pointer hover:opacity-90 md:flex hidden '><Link to="/panel">Painel</Link></li>
+                            <li className='cursor-pointer hover:opacity-90 md:flex hidden '><Link to="/">Painel</Link></li>
                             <li className='cursor-pointer hover:opacity-90 md:flex hidden'><Link to="/myaccount/dashboard">Minha Conta</Link></li>
                             <li className='md:flex hidden'><Link className='md:flex hidden' to="/contact"><i className="icon ion-md-pin contact"></i><span className='md:flex hidden'>Contato</span></Link></li>
                             <li className=' flex items-center justify-between md:flex hidden'><p className='cursor-pointer hover:opacity-80 flex items-center'><Link to="/login"><i className="icon ion-md-contact"></i>Entrar </Link></p></li>

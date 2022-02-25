@@ -1,6 +1,6 @@
-import { ReactElement, ReactHTML, ReactHTMLElement, useEffect, useState } from 'react'
+
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { JsxAttributeLike, JsxChild } from 'typescript'
 import * as C from './styles'
 
 type Props = {
@@ -8,12 +8,17 @@ type Props = {
 }
 
 export const NavBar = ({ openMenu }: Props) => {
-
+    const [close, setClose] = useState(openMenu)
+    const handleMenu = () => {
+        setClose(false)
+    }
 
     return (
-        <C.Container className='menus' open={openMenu}>
+        <C.Container open={close}>
             <nav className="menu">
-                <ul className="menuItems">
+
+                <ul className="menuItems relative overflow-hidden">
+                    <i onClick={handleMenu} className="icon ion-md-close text-white text-4xl text-start w-full pl-4"></i>
                     <li>
                         <Link to="/productpage/mobile" className="item flex justify-center">
                             <i className="icon ion-md-tablet-portrait"></i>
@@ -60,6 +65,36 @@ export const NavBar = ({ openMenu }: Props) => {
                         <Link to="/productpage/browse" className="item flex justify-center">
                             <i className="icon ion-md-more"></i>
                             <p className="title">Navegar<br />Mais</p>
+                        </Link>
+                    </li>
+                    <li className='view'>
+                        <Link to="/contact" className="item flex justify-center">
+                            <i className="icon ion-md-more"></i>
+                            <p className="title">Contato</p>
+                        </Link>
+                    </li>
+                    <li className='view'>
+                        <Link to="/myaccount/dashboard" className="item flex justify-center">
+                            <i className="icon ion-md-more"></i>
+                            <p className="title">Minha Conta</p>
+                        </Link>
+                    </li>
+                    <li className='view'>
+                        <Link to="/login" className="item flex justify-center">
+                            <i className="icon ion-md-more"></i>
+                            <p className="title">Entrar</p>
+                        </Link>
+                    </li>
+                    <li className='view'>
+                        <Link to="/register" className="item flex justify-center">
+                            <i className="icon ion-md-more"></i>
+                            <p className="title">Cadastrar</p>
+                        </Link>
+                    </li>
+                    <li className='view'>
+                        <Link to="/wishlist/id" className="item flex justify-center">
+                            <i className="icon ion-md-more"></i>
+                            <p className="title">Lista de Desejos</p>
                         </Link>
                     </li>
                 </ul>

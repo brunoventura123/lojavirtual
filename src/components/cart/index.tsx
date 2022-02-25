@@ -8,14 +8,13 @@ type Props = {
 }
 
 export const Cart = ({ move }: Props) => {
-    const [close, setClose] = useState(move)
 
     const handleCart = () => {
-        setClose(false)
+        move = false
     }
 
     return (
-        <C.Container cart={close} className={`fixed overflow-hidden z-10 bg-[rgba(0,0,0,0.5)] top-0 left-0 bottom-0 right-0 flex justify-end transition duration-150 ease-out`}>
+        <C.Container cart={move} className={`fixed overflow-hidden z-10 bg-[rgba(0,0,0,0.5)] top-0 left-0 bottom-0 right-0 flex justify-end transition duration-150 ease-out`}>
             {/* cart area wich product image, desc, price end buttons for checkout end view cart */}
 
             <section className="cart p-6 bg-white text-zinc-800 transition duration-150 ease-out">
@@ -23,7 +22,7 @@ export const Cart = ({ move }: Props) => {
                     <h2 className="font-bold text-lg">Carrinho</h2>
                     <p onClick={handleCart} className="text-xs flex items-center hover:text-blue-700 cursor-pointer"><span >FECHAR</span> <i className="icon ion-md-arrow-forward ml-2 text-lg"></i></p>
                 </div>
-                <section className="border-b border-t py-8 flex justify-between items-center">
+                <section className="border-y py-8 flex justify-between items-center">
                     <img className='w-16' width='' height='' src={cel} alt="" />
                     <div>
                         <p className="text-xs text-zinc-500 font-bold">Headphone Avançado</p>

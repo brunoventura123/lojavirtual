@@ -5,6 +5,7 @@ export const Container = styled.div<{ cart: boolean }>`
     display:${props => props.cart ? 'flex' : 'none'};
 
     section{
+        transition: all ease .5s;
         width: ${props => props.cart ? '350' : '0'}px;
         margin-right:${props => props.cart ? '0' : '-350'}px;
     }
@@ -12,7 +13,7 @@ export const Container = styled.div<{ cart: boolean }>`
     @media(max-width:450px){
         justify-content:start;
         section{
-            width: ${props => props.cart ? '100%' : 0}px;
+            width: ${props => props.cart ? '100' : '0'}%;
             margin-right:${props => props.cart ? '0' : '-320'}px;
             
         }

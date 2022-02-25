@@ -69,6 +69,7 @@ export const InfoArea = styled.div`
         .contact{
             display: none;
         }
+        
     }
 `
 

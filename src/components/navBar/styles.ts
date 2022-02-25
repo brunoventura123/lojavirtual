@@ -7,8 +7,6 @@ export const Container = styled.div<{ open: boolean }>`
         66%{margin-top:-7px;}
         100%{margin-top:0;}
     }
-    
-
     height: auto;
     padding: 10px 20px;
     width:100%;
@@ -16,6 +14,7 @@ export const Container = styled.div<{ open: boolean }>`
     align-items:center;
     background-color: #FFF;
     transition: all ease .5s;
+    position:relative;
 
     .menu{
         padding:15px;
@@ -25,7 +24,6 @@ export const Container = styled.div<{ open: boolean }>`
         transition: all ease .5s;
         height: auto;
        
-
         .menuItems{
             display:flex;
             justify-content:space-between;
@@ -49,7 +47,9 @@ export const Container = styled.div<{ open: boolean }>`
                 border-radius: 20px;       
                 border: 3px solid #0063d1; 
                 }
-
+            .view{
+                display: none;
+            }
             .item{
                 display:flex;
                 align-items:center;
@@ -85,13 +85,18 @@ export const Container = styled.div<{ open: boolean }>`
         z-index:999;
         align-items:start;
         height: auto;
-        position: fixed;
+        overflow-y:auto;
+        background-color: rgba(0,0,0,0.9);
+        width: 80vw;
+        position: absolute;
+        top: 0;
         
         .menu{
             height: auto;
             padding: 0;
-            z-index:999;
             display:${props => props.open ? 'flex' : 'none'};
+            overflow-y:auto;
+            
       
         .menuItems{
             display:flex;
@@ -101,15 +106,18 @@ export const Container = styled.div<{ open: boolean }>`
             overflow-x:hidden;
             overflow-y:hidden;
             flex-wrap:nowrap;
-            background-color: rgba(0,0,0,0.9);
-            padding: 10px 0px;
+            
+            padding: 30px 0 10px 0;
+            overflow-y:auto;
 
             li{
                 width: 100%;
-                padding:5px 100px;
+                padding:5px 70px;
                 text-align: center;
             }
-
+            .view{
+                display: block;
+            }
             .item{
                 display:flex;
                 justify-content: space-between;

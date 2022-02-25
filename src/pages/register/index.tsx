@@ -51,9 +51,9 @@ export const Register = () => {
 
     return (
         <C.Container>
-            <div className=" min-h-screen flex flex-col items-center justify-center ">
+            <div className="md:px-0 px-2 min-h-screen flex flex-col items-center justify-center ">
 
-                <form className="w-96 text-white text-md font-bold text-center " onSubmit={handleSend}>
+                <form className="md:w-96 text-white text-md font-bold text-center " onSubmit={handleSend}>
                     <h2 className="text-center text-3xl mb-8 tracking-widest">Criar Conta</h2>
                     {menssage &&
                         <div className="text-red-900 text-lg font-normal  my-2 bg-red-400 ">{menssage}</div>
@@ -106,7 +106,7 @@ export const Register = () => {
                         value="Criar Conta"
                         disabled={disabled}
                     />
-                    <footer className="flex items-center justify-center font-normal text-sm text-center"><p className="mr-10 text-blue-400 cursor-pointer" onClick={handleBack}>voltar</p><p className="">Se já tem uma conta? <Link className="text-blue-400 hover:underline" to="/login"> clique aqui.</Link></p></footer>
+                    <footer className="flex items-center justify-center font-normal text-sm text-center"><p className="mr-3 md:mr-10 text-blue-400 cursor-pointer" onClick={handleBack}>voltar</p><p className="">Se já tem uma conta? <Link className="text-blue-400 hover:underline" to="/login"> clique aqui.</Link></p></footer>
                 </form>
 
             </div>

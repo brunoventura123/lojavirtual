@@ -1,12 +1,8 @@
 import styled from "styled-components";
 import camera from '../../../images/camera.jpg';
-import s9 from '../../../images/s9.jpg'
-import nikon from '../../../images/nikon.jpg'
-import airpod from '../../../images/airpod.jpg'
-import photo from '../../../images/photo.svg'
-import error from '../../../images/error.svg'
-import montain from '../../../images/montain.svg'
-import woman from '../../../images/woman.svg'
+import error from '../../../images/error.png'
+import man from '../../../images/man.jpg'
+import woman from '../../../images/woman.jpg'
 
 export const Container = styled.section`
     padding:0 30px;
@@ -17,33 +13,41 @@ export const Container = styled.section`
         gap:20px;
         
         .area1, .topRight, .bottomLeft, .bottomRight{
-            background-position:center;
-            background-size:cover;
+            background-position:center !important;
+            background-size:cover !important;
+            background-repeat:no-repeat !important;
             width: 100%;
             height: 100%;
         }
         .area1{
-            background-image:url(${photo});
-            width:100%;
+            background:linear-gradient(rgba(0,0,0,.7),
+            rgba(0,0,0,.1)),
+            url(${camera});
         }
         .topRight{
-            background-image:url(${error});
+            background:linear-gradient(rgba(0,0,0,.9),
+            rgba(0,0,0,.1)),
+            url(${error});
             
         }
         .bottomLeft{
-            background-image:url(${montain});
+            background:linear-gradient(rgba(0,0,0,.7),
+            rgba(0,0,0,.0)),
+            url(${man});
         }
         .bottomRight{
-            background-image:url(${woman});
+            background:linear-gradient(rgba(0,0,0,.7),
+            rgba(0,0,0,.2)),
+            url(${woman});
         }
         
     }
     @media(max-width:640px){
         .grid{
-        display:grid;
-        grid-template-columns:1fr;
-        grid-template-rows: repeat(4,1fr);
-        gap:20px;
+            display:grid;
+            grid-template-columns:1fr;
+            grid-template-rows: repeat(4,1fr);
+            gap:20px;
         }
     }
 `

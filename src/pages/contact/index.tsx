@@ -24,7 +24,7 @@ export const Contact = () => {
                 <div className="lg:px-8 md:px-4 pt-20">
                     <div className="flex md:flex-row flex-col mb-28">
 
-                        <div className="flex lg:flex-col md:flex-row flex-col bg-zinc-100 lg:w-96 w-full justify-between p-6 pr-16 text-sm lg:mb-0 mb-6">
+                        <div className="flex md:flex-col flex-col bg-zinc-100 lg:w-96 w-full justify-between p-6 pr-16 text-sm lg:mb-0 mb-6">
                             <div className="mb-7">
                                 <h2 className="font-semibold mb-2 text-xl">Endereço</h2>
                                 <p className="leading-6 text-zinc-500">1600 Amphitheatre Parkway <br />New York WC1 1BA</p>
