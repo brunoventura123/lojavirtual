@@ -33,7 +33,7 @@ export const Header = () => {
             </C.InfoArea> <hr />
             <C.SearchArea >
                 <div className='area'>
-                    <i onClick={() => setClose(!close)} className="icon ion-md-list text-3xl mx-4 lg:hidden block"></i>
+                    <i onClick={() => setClose(!close)} className="icon ion-md-list text-3xl mx-4 menuToggle"></i>
                     <Link to="/"><img width='100%' height='auto' src={logo} alt="Logo" /></Link>
 
                     <div className='w-1/3 flex items-center bg-white rounded md:flex hidden'><input className='w-full px-3 py-2 ml-2 outline-none bg-none text-zinc-600 text-sm md:flex hidden' type="text" name="search" placeholder='Pesquisar...' /><i className="icon ion-md-search text-zinc-600 pr-2 text-xl md:flex hidden"></i></div>

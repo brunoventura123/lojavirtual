@@ -20,7 +20,7 @@ export const Container = styled.div<{ open: boolean }>`
         padding:15px;
         width:100%;
         overflow-X:auto;
-        display:${props => props.open ? 'flex' : 'none'};
+        display: block;
         transition: all ease .5s;
         height: auto;
        
@@ -97,7 +97,6 @@ export const Container = styled.div<{ open: boolean }>`
             display:${props => props.open ? 'flex' : 'none'};
             overflow-y:auto;
             
-      
         .menuItems{
             display:flex;
             justify-content:center;

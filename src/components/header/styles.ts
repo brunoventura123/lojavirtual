@@ -59,6 +59,7 @@ export const InfoArea = styled.div`
                     i{
                         margin-right:10px;
                         font-size:18px;
+                        
                     }
                 }
             }
@@ -85,7 +86,9 @@ export const SearchArea = styled.div`
         display:flex;
         justify-content:space-between;
         align-items:center;
-
+        .menuToggle{
+            display: none;
+        }
         img{
             height:50px;
         }
@@ -97,6 +100,7 @@ export const SearchArea = styled.div`
             i{
                 font-size:28px;
                 margin: 0 10px;
+                
             }
         }
         .cart, .phone, .heart{
@@ -139,5 +143,11 @@ export const SearchArea = styled.div`
         margin: 0 !important;
         border:none !important;
     }
+   
 }
+@media (max-width:800px) {
+        .area .menuToggle{
+            display: block;
+        }
+    }
 `
