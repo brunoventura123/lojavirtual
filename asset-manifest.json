@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lojavirtual/static/css/main.e4c6dde2.css",
-    "main.js": "/lojavirtual/static/js/main.1aaeab15.js",
+    "main.css": "/lojavirtual/static/css/main.7784939b.css",
+    "main.js": "/lojavirtual/static/js/main.c06791a1.js",
     "static/media/bgblue.svg": "/lojavirtual/static/media/bgblue.195cde02ab21f9a1aa12a9fc7136b699.svg",
     "static/media/bgblack.svg": "/lojavirtual/static/media/bgblack.4e678af59b97da5fdab975fdc1727b4d.svg",
     "static/media/sp.jpg": "/lojavirtual/static/media/sp.1eab794ddd5e0b84a65a.jpg",
@@ -25,11 +25,11 @@
     "static/media/logo.png": "/lojavirtual/static/media/logo.7cf8e32d8f8406d5e7ad.png",
     "static/media/man.jpg": "/lojavirtual/static/media/man.22e64623e0f54b6e348f.jpg",
     "index.html": "/lojavirtual/index.html",
-    "main.e4c6dde2.css.map": "/lojavirtual/static/css/main.e4c6dde2.css.map",
-    "main.1aaeab15.js.map": "/lojavirtual/static/js/main.1aaeab15.js.map"
+    "main.7784939b.css.map": "/lojavirtual/static/css/main.7784939b.css.map",
+    "main.c06791a1.js.map": "/lojavirtual/static/js/main.c06791a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4c6dde2.css",
-    "static/js/main.1aaeab15.js"
+    "static/css/main.7784939b.css",
+    "static/js/main.c06791a1.js"
   ]
 }
