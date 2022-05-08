@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import * as C from './styles'
 
@@ -9,16 +9,19 @@ type Props = {
 
 export const NavBar = ({ openMenu }: Props) => {
     const [close, setClose] = useState(openMenu)
-    const handleMenu = () => {
-        setClose(false)
-    }
+    useEffect(() => {
+        const handleMenu = () => {
+            setClose(openMenu)
+        }
+        handleMenu()
+    }, [openMenu])
 
     return (
         <C.Container open={close}>
             <nav className="menu">
 
                 <ul className="menuItems relative overflow-hidden">
-                    <i onClick={handleMenu} className="icon ion-md-close text-white text-4xl text-start w-full pl-4"></i>
+                    <i onClick={() => setClose(!close)} className="icon ion-md-close text-white text-4xl text-start w-full pl-4"></i>
                     <li>
                         <Link to="/productpage/mobile" className="item flex justify-center">
                             <i className="icon ion-md-tablet-portrait"></i>

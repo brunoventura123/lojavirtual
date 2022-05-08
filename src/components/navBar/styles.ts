@@ -20,7 +20,7 @@ export const Container = styled.div<{ open: boolean }>`
         padding:15px;
         width:100%;
         overflow-X:auto;
-        display:flex;
+        display:${props => props.open ? 'flex' : 'none'};
         transition: all ease .5s;
         height: auto;
        
@@ -80,7 +80,7 @@ export const Container = styled.div<{ open: boolean }>`
         }
     }
 
-    @media(max-width:1025px){
+    @media(max-width:800px){
         padding: 0;
         z-index:999;
         align-items:start;
@@ -89,7 +89,7 @@ export const Container = styled.div<{ open: boolean }>`
         background-color: rgba(0,0,0,0.9);
         width: 80vw;
         position: absolute;
-        top: 0;
+        top: 0  ;
         
         .menu{
             height: auto;
@@ -131,13 +131,13 @@ export const Container = styled.div<{ open: boolean }>`
                
 
                 i{
-                    font-size:28px;
+                    font-size:22px;
                     margin-right:20px;
                     transition:.2s;
                     
                 }
                 p{
-                    font-size:20px;
+                    font-size:14px;
                     line-height:17px;
                     margin:0px;
                     padding-bottom: 10px;
